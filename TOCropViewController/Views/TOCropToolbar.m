@@ -61,11 +61,7 @@
     
     _doneTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     _doneTextButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-    [_doneTextButton setTitle:NSLocalizedStringFromTableInBundle(@"Done",
-                                                                 @"TOCropViewControllerLocalizable",
-                                                                 [NSBundle bundleForClass:[self class]],
-                                                                 nil)
-                     forState:UIControlStateNormal];
+    [_doneTextButton setTitle:NSLocalizedStringFromTable(@"Done", @"TOCropViewControllerLocalizable", nil) forState:UIControlStateNormal];
     [_doneTextButton setTitleColor:[UIColor colorWithRed:1.0f green:0.8f blue:0.0f alpha:1.0f] forState:UIControlStateNormal];
     [_doneTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
     [_doneTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -79,11 +75,7 @@
     
     _cancelTextButton = [UIButton buttonWithType:UIButtonTypeSystem];
     _cancelTextButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-    [_cancelTextButton setTitle:NSLocalizedStringFromTableInBundle(@"Cancel",
-                                                                   @"TOCropViewControllerLocalizable",
-                                                                   [NSBundle bundleForClass:[self class]],
-                                                                   nil)
-                       forState:UIControlStateNormal];
+    [_cancelTextButton setTitle:NSLocalizedStringFromTable(@"Cancel", @"TOCropViewControllerLocalizable", nil) forState:UIControlStateNormal];
     [_cancelTextButton.titleLabel setFont:[UIFont systemFontOfSize:17.0f]];
     [_cancelTextButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_cancelTextButton];
@@ -93,19 +85,19 @@
     [_cancelIconButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_cancelIconButton];
     
-    _clampButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    _clampButton.contentMode = UIViewContentModeCenter;
-    _clampButton.tintColor = [UIColor whiteColor];
-    [_clampButton setImage:[TOCropToolbar clampImage] forState:UIControlStateNormal];
-    [_clampButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:_clampButton];
+//    _clampButton = [UIButton buttonWithType:UIButtonTypeSystem];
+//    _clampButton.contentMode = UIViewContentModeCenter;
+//    _clampButton.tintColor = [UIColor whiteColor];
+//    [_clampButton setImage:[TOCropToolbar clampImage] forState:UIControlStateNormal];
+//    [_clampButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [self addSubview:_clampButton];
     
-    _rotateButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    _rotateButton.contentMode = UIViewContentModeCenter;
-    _rotateButton.tintColor = [UIColor whiteColor];
-    [_rotateButton setImage:[TOCropToolbar rotateImage] forState:UIControlStateNormal];
-    [_rotateButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:_rotateButton];
+//    _rotateButton = [UIButton buttonWithType:UIButtonTypeSystem];
+//    _rotateButton.contentMode = UIViewContentModeCenter;
+//    _rotateButton.tintColor = [UIColor whiteColor];
+//    [_rotateButton setImage:[TOCropToolbar rotateImage] forState:UIControlStateNormal];
+//    [_rotateButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//    [self addSubview:_rotateButton];
     
     _resetButton = [UIButton buttonWithType:UIButtonTypeSystem];
     _resetButton.contentMode = UIViewContentModeCenter;

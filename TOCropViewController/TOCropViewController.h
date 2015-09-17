@@ -106,6 +106,8 @@
  */
 - (instancetype)initWithImage:(UIImage *)image;
 
+- (instancetype)initWithImage:(UIImage *)image aspectRatioIndex:(NSInteger)_aspectRatioIndex;
+
 /**
  Play a custom animation of the target image zooming to its position in the crop controller while the background fades in.
  If any view configurations need to be done before the animation starts, please do them in `prepareForTransitionHandler`
